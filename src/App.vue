@@ -1,7 +1,8 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <v-toolbar-title>Vuetify NavBar</v-toolbar-title>
+      <v-toolbar-title style="cursor: pointer" @click="$router.push('/')">
+      Vuetify Deshboard</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn 
         v-for="link in links"
@@ -61,6 +62,10 @@ export default {
       {
         label:'login',
         url:'/login'
+      },
+      {
+        label:'deshboard',
+        url:'/deshboard'
       }
     ]
   }),
